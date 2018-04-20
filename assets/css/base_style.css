@@ -1,0 +1,21 @@
+body {
+  color: #fff;
+  background-color: #292929;
+}
+
+a {
+  text-decoration: none;
+  color: #659acf;
+}
+
+a:hover {
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  text-decoration: underline;
+}
+
+.code {
+    /* 实现格式 */
+}

@@ -3,3 +3,7 @@
 
 # vscode 自动保存历史文件
 .history
+
+# 缓存
+.sass-cache/
+_site/

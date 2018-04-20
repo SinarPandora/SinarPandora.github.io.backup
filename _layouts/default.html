@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<title>{{ page.title }}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/fonts.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/base_style.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/layout.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/terminal.css">
+    <title>{{ page.title }}</title>
 </head>
+
 <body>
-{{ content }}
+    <p>{{ page.date | date_to_string }}</p>
+    <br> {{ content }}
 </body>
+
 </html>
