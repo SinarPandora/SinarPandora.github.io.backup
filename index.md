@@ -20,7 +20,7 @@ Install Success.
 \>> **sinar -readme**  
 Hi, I'm Sinar, Sinar Pandora, a college students.  
 I only do what I Interested.  
-If you want to know more about me, a detailed introduction in chinese can be found [here]({{ site.url }}/about_me/intro.html).  
+If you want to know more about me, a detailed introduction in chinese can be found [here]({{ site.url }}/about_me/about_me.html).  
 
 \>> **sinar -ls -n**  
 please wait...{% for post in site.posts %}  
