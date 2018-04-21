@@ -8,6 +8,10 @@ a {
   color: #659acf;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #cf6a4c
+}
+
 a:hover {
   -moz-transition: all 0.5s ease-in;
   -webkit-transition: all 0.5s ease-in;

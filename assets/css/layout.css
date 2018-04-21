@@ -9,3 +9,7 @@
 .simple_layout p {
     text-indent: 2em
 }
+
+.simple_layout strong b {
+    color: #73e234;
+}
