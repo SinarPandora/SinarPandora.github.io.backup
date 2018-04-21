@@ -1,6 +1,11 @@
-body {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.center_layout {
+    padding: 2% 35%;
+}
+
+.simple_layout {
+    padding: 2% 15%;
+}
+
+.simple_layout p {
+    text-indent: 2em
 }

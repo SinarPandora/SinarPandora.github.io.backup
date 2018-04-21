@@ -3,34 +3,30 @@ layout: default
 title: 可爱！想变帅气！
 --- 
 ## Welcome to sinar's laboratory
-### 欢迎来到喵君的实验室
 
-\>> sinar -install  
+Welcome to lab 18.04.21 LTS  
+
+\*&nbsp; Telegram: &nbsp;&nbsp;[@sinar_pandora](https://t.me/Sinar_Pandora)  
+\*&nbsp; Twitter: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[@sinar_pandora](https://twitter.com/sinar_pandora)  
+\*&nbsp; Github: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Sinar Pandora](https://github.com/SinarPandora)  
+\*&nbsp; QQ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1211402231  
+
+Last login: {{ site.time | date: "%a %b %e %T %Y" }}  
+
+\>> **sinar -install**  
 Install Success.  
  0 error(s), 0 warning(s)  
  
-\>> sinar -version  
-Sinar Pandora Ver 2018.1  
-Blog Version 0.1  
-VM Platform Windows 10 x64  
+\>> **sinar -readme**  
+Hi, I'm Sinar, Sinar Pandora, a college students.  
+I only do what I Interested.  
+If you want to know more about me, a detailed introduction in chinese can be found [here]({{ site.url }}/about_me/intro.html).  
 
-\>> sinar -readme  
-你好，这里是喵君，是一个只做感兴趣的事的学生宅。  
-请多指教  
-
-\>> sinar -ls -n  
-正在获取最新文章...  
-获取成功：  
-{% for post in site.posts %}  
-[{{post.title}}]({{ site.baseurl }}{{ post.url }})  
+\>> **sinar -ls -n**  
+please wait...{% for post in site.posts %}  
+[{{post.title}}]({{ site.url }}{{ post.url }})  
 {% endfor %}  
 
-\>> sinar -contact  
-QQ: 1211402231  
-Twitter: [@Sinar_Pandora](https://twitter.com/sinar_pandora)  
-Weibo: [@心阳喵](https://weibo.com/chenxilimiao/)  
-Github: [Sinar Pandora](https://github.com/SinarPandora)
-
-\>> sinar -e  
+\>> **sinar -e**  
 now evolving, please wait...  
-\[################------------------------] 40%  
+\[########------------------------------------------------------------] 20%  
