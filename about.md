@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 title: 关于我
---- 
-
-# 关于我
+permalink: /about/
+---
 
 ### **一句话介绍**
 你好，我是喵君，一个只做喜欢的事的学生。  
