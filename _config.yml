@@ -24,6 +24,8 @@ rss: RSS
 # - username: jekyll2
 #   instance: example.com
 
+disqus:
+  shortname: sinarpandora-github-io
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
