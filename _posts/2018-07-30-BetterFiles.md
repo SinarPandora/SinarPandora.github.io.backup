@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 简单好用的 Scala I/O 开源库——Better-Files（官方文档翻译）
+title: 一见倾心的 Scala I/O 开源库 —— Better-Files（官方文档翻译）
 ---
 
 > 对于 Scala 开发者来说，I/O 操作，如文件的读写通常采用内置的 scala.io.Source API 来实现。但其功能欠缺，而且并不是那么方便（甚至有删除该 API 的提案）。而直接使用 Java 的 io/nio API 又要面对速度慢的问题，以及返回 null，抛出异常等非 Scala 风格设计。
@@ -10,8 +10,6 @@ title: 简单好用的 Scala I/O 开源库——Better-Files（官方文档翻�
 > 所以，为什么不尝试使用由 Scala 实现的 I/O 库，如：[sbt io](https://github.com/sbt/io)、[Ammonite-Ops](http://www.lihaoyi.com/Ammonite/#Ammonite-Ops)、[better-files](https://github.com/pathikrit/better-files)呢。
 >
 > Better-files 就是其中一个轻量，但功能强大的开源 I/O 库，支持丰富的 API 以及 Scala 风格的语法设计。
-
-[TOC]
 
 ## 导入依赖
 sbt:
@@ -36,13 +34,14 @@ maven:
 
 ```scala
 import better.files._
+import better.files.File._
 // 如果引起同事的误会，可以修改导入模块的名称
 // import better.files.{File => ScalaFile, _}
 import java.io.{File => JFile}
 val f = File("/User/johndoe/Documents")                     // 使用构造器
 val f1: File = file"/User/johndoe/Documents"                // 字符串插值器
 val f2: File = "/User/johndoe/Documents".toFile             // 讲一个字符串路径转换为文件
-val f3: File = new JFile("/User/johndoe/Documents").toScala  // 将一个 java File 对象转换为 better-file 对象
+val f3: File = new JFile("/User/johndoe/Documents").toScala // 将一个 java File 对象转换为 better-files 对象
 val f4: File = root/"User"/"johndoe"/"Documents"            // 从根目录下查找文件
 val f5: File = `~` /"Documents"                             // 与 home / "Documents" 等价
 val f6: File = "/User"/"johndoe"/"Documents"                // 使用路径分隔符 DSL
@@ -111,7 +110,7 @@ tee 函数可以合并多个流
 val s3 = s1 tee s2
 s3.printWriter.println(s"Hello world") // 将 s1 与 s2 合并后写入
 ```
-可以为任何读/写操作提供自己的字符集
+可以为任何读/写操作提供字符集
 ```scala
 val content: String = file.contentAsString  // 默认字符集
 import java.nio.charset.Charset             // 自定义字符集
@@ -356,7 +355,6 @@ def write(out: OutputStream, countries: Seq[String]) =
 ## UNIX DSL
 以上的内容也可以通过类似 UNIX Shell 的方式操作：
 ```scala
-import better.files._
 import better.files.Dsl._   // 必须导入 Dsl._ 来开启这些功能
 
 pwd / cwd // 当前目录（classpath）
