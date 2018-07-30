@@ -481,7 +481,7 @@ implicit val animalParser: Scannable[Animal] = Scannable {scanner =>
 val scanner = file.newScanner()
 println(scanner.next[Animal])
 ```
-shapeless-scanner 允许你扫描 HList
+[shapeless-scanner](https://github.com/milessabin/shapeless) 允许你扫描 HList
 ```scala
 val in = Scanner("""
                 12 Bob True
