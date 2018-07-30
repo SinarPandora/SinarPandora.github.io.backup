@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 一见倾心的 Scala I/O 开源库 —— Better-Files（官方文档翻译）
 ---
 
