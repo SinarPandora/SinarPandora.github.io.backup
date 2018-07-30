@@ -1,9 +1,7 @@
 ---
 layout: post
-title: 简单好用的 Scala I/O 开源库 —— Better-Files（官方文档翻译）
+title: 简单好用的 Scala I/O 开源库——Better-Files（官方文档翻译）
 ---
-
-#  简单好用的 Scala I/O 开源库 —— Better-Files（官方文档翻译）
 
 > 对于 Scala 开发者来说，I/O 操作，如文件的读写通常采用内置的 scala.io.Source API 来实现。但其功能欠缺，而且并不是那么方便（甚至有删除该 API 的提案）。而直接使用 Java 的 io/nio API 又要面对速度慢的问题，以及返回 null，抛出异常等非 Scala 风格设计。
 >
@@ -26,6 +24,7 @@ compile group: 'com.github.pathikrit', name: 'better-files_2.12', version: versi
 ```
 maven:
 ```xml
+
 <dependency>
   <groupId>com.github.pathikrit</groupId>
   <artifactId>better-files_2.12</artifactId>
