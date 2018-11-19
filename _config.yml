@@ -1,8 +1,8 @@
-title: 喵君的实验室
+title: 想变得帅气
 author: 欣阳喵
 email: lindao1997@live.com
 description: > # this means to ignore newlines until "twitter_username:"
-  属于喵君的小小地盘
+  属于喵君的小小实验室
 paginate: 5
 paginate_path: "blog/page:num"
 
