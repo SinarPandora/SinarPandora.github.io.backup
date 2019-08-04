@@ -16,5 +16,5 @@ permalink: /about/
 请多指教。  
 
 ### **相关**
-自家的崽：果酱 Jam
+自家的崽：果酱 Jam（作者阿怜）  
 ![果酱](http://ww4.sinaimg.cn/large/006tNc79ly1g5o2vmlfesg30xu0u0wok.gif)
